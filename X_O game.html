@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="X_O game.css" />
+	<script type="text/javascript" src="X_O game.js"></script>
+    <title> X and O game</title>
+</head>
+<body>	
+		<header>
+			<p>Minimax Algorithm</p>
+		</header>
+			<br />
+			<p id="message"></p>
+			<br />
+		<table id="tab-tic-tac-toe" cellspacing="0">
+			<tr><td id="1" onclick="Playgame(1)"></td><td id="2" onclick="Playgame(2)"></td><td id="3" onclick="Playgame(3)"></td></tr>
+			<tr><td id="4" onclick="Playgame(4)"></td><td id="5" onclick="Playgame(5)"></td><td id="6" onclick="Playgame(6)"></td></tr>
+			<tr><td id="7" onclick="Playgame(7)"></td><td id="8" onclick="Playgame(8)"></td><td id="9" onclick="Playgame(9)"></td></tr>
+		</table>
+		<br><br>
+		<input type="button" value="Restart" id="bnt-restart" onclick="replay(false)"/>
+		<select  onchange="select_kindPlay();"id="select"><option value="0" >Easy</option><option value="1">Medium</option><option value="2">Imposibole</option> <option value="3">Two Player</option></select>
+		<button onclick="Restscore()">Rest score</button>
+		<button  onclick="Bot_First()" id="bot_first"> the automatic player is the first</button>
+		<br />
+		<H1 id="ScoreP1">0</H1>
+		<H1 id="ScoreP2">0</H1>
+		
+	</body>
+</html>
