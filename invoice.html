@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>tp1</title>
+<link rel="stylesheet" type="text/css" href="invoice.css">
+</head>
+
+<body>
+<div>
+<h1> Invoice </h1>
+<p> Welcome to our service </p>
+<h1> Invoice </h1>
+</div>
+<fieldset>
+<legend> Provider : ?</legend>
+<select>
+<option value = "fr1"> Provider1 </option>
+<option value = "fr2"> Provider2 </option>
+<option value = "fr3"> Provider3 </option>
+<option value = "fr4"> Provider4 </option>
+</select>
+</fieldset>
+<div id="2">
+<h1> Fill in the Form </h1>
+</div>
+<fieldset>
+<legend> Information : ?</legend>
+<input type="radio" name="type" value="perso"> Personal&nbsp;&nbsp;
+<input type="radio" name="type" value="pro"> Professional <br><br>
+VAT Number <br> 
+<input type="text" name="VAT"><br><br>
+First name <br> 
+<input type="text" name="first name"><br><br>
+Last name <br> 
+<input type="text" name="name"><br><br>
+
+Email <br> 
+<input type="text" name="email" id=25><br><br>
+Phone Number <br> 
+<input type="text" name="phone"><br><br>
+address <br> 
+<input type="text" name="address"><br><br>
+Region <br> 
+<input type="text" name="region"><br><br>
+City <br> 
+<input type="text" name="city"><br><br>
+Postal Code <br> 
+<input type="text" name="code"><br><br>
+Payment Card<br> 
+<input type="text" name="c"><br><br>
+<input type="submit" value= "submit"> &nbsp;&nbsp;
+<input type="reset" value="reset">
+</fieldset>
+</body>
+
+<script>
+    var div = document.getElementById("2")
+    var p = document.createElement("p")
+    div.appendChild(p)
+</script>
+</html>

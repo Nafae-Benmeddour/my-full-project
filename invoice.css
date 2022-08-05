@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(141, 107, 141);
+}
+select:focus{
+  background-color: rgb(63, 61, 61);
+  border: 2px black dashed;
+}
+option:hover{
+    background-color: rgb(192, 192, 187);
+    color: black;
+}
+input,select{
+    background-color: aquamarine;
+    width: 100%;
+}
+input[type="radio"]{
+    width: auto;
+}
+input{
+    color: rgb(32, 32, 219);
+}
+input[type="submit"],input[type="reset"]{
+    width: 90px;
+    height: 40px;
+    background-color:rgb(33, 241, 127);
+    color: black;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+    width:70px;height:40px;border:2px dashed black
+    ; background: beige;
+
+}
